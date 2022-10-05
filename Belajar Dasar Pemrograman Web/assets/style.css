@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,700&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;
+    color: #000;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+main {
+    padding: 20px;
+    overflow: auto;
+}
+
+header {
+    height: 70px;
+    background-color: #FFDE00;
+}
+
+header h1 {
+    display: inline-block;
+    float: left;
+    padding: 19px 24px;
+    text-transform: uppercase;
+}
+
+header h1 a {
+    transition: .3s;
+}
+
+header h1 a:hover {
+    color: #2DBF0B;
+}
+
+header ul {
+    float: left;
+}
+
+header ul li {
+    padding-top: 23px;
+    padding-right: 10px;
+    display: inline-block;
+}
+
+header ul li a {
+    transition: 0.3s;
+}
+
+header ul li a:hover {
+    color: #2DBF0B;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    text-decoration: double;
+    margin: 20px;
+    font-style: oblique;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+
+#sosmed
+img {
+    text-align: center;
+    width: 40px;
+}
+
+#profile header,
+h2,
+figure,
+img {
+    text-align: center;
+    margin: 10px;
+}
+
+h2 span {
+    border: 6px dashed #FFDE00;
+    padding: 5px 15px;
+}
+
+#profile img {
+    width: 120px;
+}
+
+#profile {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+#content {
+    float: left;
+    width: 75%;
+}
+
+.featured-image {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    object-position: center;
+}
+
+#ContactForm1_contact-form-name,
+#ContactForm1_contact-form-email {
+    width: 100%;
+    height: auto;
+    margin: 5px auto;
+    padding: 10px;
+    background: #fff;
+    color: #444;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    transition: all 0.5s ease-out;
+}
+
+#ContactForm1_contact-form-email-message {
+    width: 100%;
+    height: 100px;
+    margin: 5px 0;
+    padding: 10px;
+    background: #fff;
+    color: #444;
+    font-family: 'Open Sans', sans-serif;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    transition: all 0.5s ease-out;
+}
+
+#ContactForm1_contact-form-name:focus,
+#ContactForm1_contact-form-email:focus,
+#ContactForm1_contact-form-email-message:focus {
+    outline: none;
+    background: #fff;
+    color: #444;
+    border-color: rgb(23, 218, 169);
+    box-shadow: 0 0 5px rgba(67, 230, 167, 0.7);
+}
+
+#ContactForm1_contact-form-submit {
+    width: 100%;
+    font-family: 'Open Sans';
+    float: left;
+    background: #fff;
+    color: #aaa;
+    margin: 10px auto;
+    vertical-align: middle;
+    cursor: pointer;
+    padding: 10px 18px!important;
+    font-weight: 700;
+    font-size: 14px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    border-radius: 3px;
+    background-image: linear-gradient(110deg, #b3ffb3 0%, #79bbcb 50%, transparent 50%, transparent 100%);
+    background-size: 200%;
+    background-position: 120% 0;
+    background-repeat: no-repeat;
+    border: 1px solid #ddd;
+    transition: all .8s ease, background-position .8s ease, color .8s ease;
+}
+
+#ContactForm1_contact-form-submit:hover {
+    color: red;
+    background-position: 0 0;
+    border-color: #2DBF0B;
+}
+
+#ContactForm1_contact-form-error-message,
+#ContactForm1_contact-form-success-message {
+    width: 100%;
+    margin-top: 35px;
+}
+
+.contact-form-error-message-with-border {
+    background: #f36c60;
+    border: none;
+    box-shadow: none;
+    color: #fff;
+    padding: 5px 0;
+}
+
+.contact-form-success-message {
+    background: #4fc3f7;
+    border: none;
+    box-shadow: none;
+    color: #fff;
+}
+
+img.contact-form-cross {
+    line-height: 40px;
+    margin-left: 5px;
+}
+
+aside {
+    float: right;
+    width: 25%;
+    padding-left: 20px;
+}
+
+footer {
+    padding: 20px;
+    color: white;
+    background-color: #FFDE00;
+    text-align: center;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 1000px) {
+    #content,
+    aside {
+        width: 100%;
+        padding: 0;
+    }
+}
+
+
+
+li {
+float: left;
+}
+
+li a, .dropbtn {
+color: black;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+background-color: red;
+}
+
+li.dropdown {
+display: inline-block;
+}
+
+.dropdown-content {
+display: none;
+position: absolute;
+background-color: #f9f9f9;
+min-width: 160px;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+z-index: 1;
+}
+
+.dropdown-content a {
+color: black;
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1;}
+
+.dropdown:hover .dropdown-content {
+display: block;
+}
