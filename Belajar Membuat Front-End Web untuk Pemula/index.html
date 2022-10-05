@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Bookshelf Apps</title>
+        <link rel="stylesheet" href="assets/css/index.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap"
+            rel="stylesheet"
+        />
+			<link rel="shortcut icon" href="assets/img/book.png">
+
+    </head>
+    <body>
+        <header class="app-header">
+            <div class="app-title">
+                <img src="assets/img/bookshelf.png" alt="" />
+                <h2>Bookshelf Apps</h2>
+            </div>
+        </header>
+
+        <main class="app-content">
+            <section id="inputSection" class="input-section">
+                <div class="input-head">
+                    <img class="w-icon" src="assets/img/add.png" alt="" />
+					<p><h2>Add Book</h2></p>
+                    <button id="hideInput">
+                        <img class="w-icon" src="assets/img/hide.png" alt="" />
+                    </button>
+                </div>
+                <form id="inputBook">
+                    <div class="input-item col">
+                        <label for="inputBookTitle">Title</label>
+                        <input
+                            id="inputBookTitle"
+                            type="text"
+                            placeholder="Example: Learn Front End Web Beginners.."
+                            required
+                        />
+                    </div>
+                    <div class="input-item col">
+                        <label for="inputBookAuthor">Author</label>
+                        <input
+                            id="inputBookAuthor"
+                            type="text"
+                            placeholder="Example: Dicoding Indonesia"
+                            required
+                        />
+                    </div>
+                    <div class="input-item row">
+                        <div class="input-item row">
+                            <label for="inputBookYear">Year</label>
+                            <input
+                                id="inputBookYear"
+                                type="number"
+                                placeholder="2022"
+                                required
+                            />
+                        </div>
+                        <div class="input-item row">
+                            <label for="inputBookIsComplete"
+                                >Already Read</label
+                            >
+                            <input id="inputBookIsComplete" type="checkbox" />
+                        </div>
+                    </div>
+                    <button type="submit">Put It on The Bookshelf</button>
+                </form>
+            </section>
+
+            <section class="bookshelf-section">
+                <div class="bookshelf-filter">
+                    <button id="showInput">
+                        <img class="w-icon" src="assets/img/add.png" alt="" />
+                        <p>New Book</p>
+                    </button>
+
+                    <button
+                        class="filter-book filter-active"
+                        onclick="filterBook('all')"
+                    >
+                        <img class="w-icon" src="assets/img/book.png" alt="" />
+                        <p>All Books</p>
+                        <span id="countAllBook">0</span>
+                    </button>
+                    <button
+                        class="filter-book"
+                        onclick="filterBook('incompleteBookshelf')"
+                    >
+                        <img class="w-icon" src="assets/img/open-book.png" alt="" />
+                        <p>Unread</p>
+                        <span id="countInComplete">0</span>
+                    </button>
+                    <button
+                        class="filter-book"
+                        onclick="filterBook('completeBookshelf')"
+                    >
+                        <img
+                            class="w-icon"
+                            src="assets/img/close-book.png"
+                            alt=""
+                        />
+                        <p>Already Read</p>
+                        <span id="countComplete">0</span>
+                    </button>
+
+                    <div class="search-book">
+                        <label for="searchBookTitle">
+                            <img
+                                class="w-icon"
+                                src="assets/img/search.png"
+                                alt=""
+                            />
+                        </label>
+                        <input
+                            id="searchBookTitle"
+                            type="text"
+                            placeholder="Search Book Title..."
+                        />
+                    </div>
+                </div>
+
+                <div class="bookshelf-list">
+                    <div id="incompleteBookshelf" class="bookshelf-item">
+                        <h3>Unread</h3>
+                        <div id="incompleteBookList" class="book-list"></div>
+                    </div>
+
+                    <div id="completeBookshelf" class="bookshelf-item">
+                        <h3>Already Read</h3>
+                        <div id="completeBookList" class="book-list"></div>
+                    </div>
+                </div>
+            </section>
+        </main>
+		
+        <script src="assets/js/storage.js"></script>
+        <script src="assets/js/dom.js"></script>
+        <script src="assets/js/index.js"></script>
+    </body>
+</html>
